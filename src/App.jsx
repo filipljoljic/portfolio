@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
 import profilePic from "../src/assets/profile.jpeg";
+import finetica from "../src/assets/financeManagement.png";
+import fantasyfootball from "../src/assets/fantasyfootball.png";
+import infobip from "../src/assets/infobip.png";
+import idea from "../src/assets/idea.png";
+import padelapp from "../src/assets/padelapp.jpeg";
+import foodorderingapp from "../src/assets/foodorder.jpg";
 import {
   Github,
   Linkedin,
@@ -26,7 +32,7 @@ export default function Portfolio() {
         "Developed secure finance and invoice automation app integrating generative AI for document processing, improving accuracy and efficiency.",
       tech: ["React", "Node.js", "Express", "PostgreSQL", "AI Integration"],
       link: "https://finetica.onrender.com/login",
-      gradient: "from-purple-500 to-pink-500",
+      image: finetica,
     },
     {
       title: "Fantasy Football Platform",
@@ -34,7 +40,7 @@ export default function Portfolio() {
         "Database-driven fantasy football web app with user authentication, admin roles, and a custom scoring system.",
       tech: ["PHP", "JavaScript", "Docker", "Heroku", "MySQL"],
       link: "https://github.com/filipljoljic/fantasyfootball",
-      gradient: "from-blue-500 to-cyan-500",
+      image: fantasyfootball,
     },
     {
       title: "Communication Solutions (Infobip)",
@@ -42,7 +48,7 @@ export default function Portfolio() {
         "Designed and implemented client-specific integrations using Infobip’s CPaaS and SaaS platform and APIs to improve messaging flow and data reliability.",
       tech: ["Java", "JavaScript", "SQL", "REST API"],
       link: "https://www.infobip.com/",
-      gradient: "from-green-500 to-emerald-500",
+      image: infobip,
     },
     {
       title: "Data Processing Pipelines",
@@ -50,7 +56,7 @@ export default function Portfolio() {
         "Developed and optimized Python-based data workflows for real-time logistics tracking and performance optimization.",
       tech: ["Python", "Django", "SQL", "PostgreSQL"],
       link: "https://www.caseware.com/products/idea/",
-      gradient: "from-orange-500 to-red-500",
+      image: idea,
     },
     {
       title: "Padel App",
@@ -58,7 +64,7 @@ export default function Portfolio() {
         "Developed a padel app where users can track their match scores and players which they have played. Future development includes adding a chat functionality and a leaderboard, aswell an AI system that suggests players based on your skill level and process videos of your matches to improve your skills.",
       tech: ["React", "Node.js", "Express", "Prisma", "AI Integration"],
       link: "https://github.com/filipljoljic/Padel-app",
-      gradient: "from-orange-500 to-red-500",
+      image: padelapp,
     },
     {
       title: "Food Ordering App",
@@ -66,7 +72,7 @@ export default function Portfolio() {
         "Developed a food ordering app where users can order food from their favorite restaurants.",
       tech: ["PHP", "JavaScript", "Docker", "Heroku", "MySQL"],
       link: "https://github.com/filipljoljic/food-order-project",
-      gradient: "from-orange-500 to-red-500",
+      image: foodorderingapp,
     },
   ];
 
@@ -267,9 +273,13 @@ export default function Portfolio() {
                 rel="noopener noreferrer"
                 className="group bg-slate-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-purple-500/20 hover:border-purple-500/50 transition-all hover:transform hover:scale-105"
               >
-                <div
-                  className={`h-48 bg-gradient-to-r ${project.gradient} opacity-80 group-hover:opacity-100 transition-opacity`}
-                ></div>
+                <div className="h-48 overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-semibold mb-2 flex items-center justify-between">
                     {project.title}
