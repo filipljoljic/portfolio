@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import profilePic from "../src/assets/profile.jpeg";
 import {
   Github,
   Linkedin,
@@ -159,7 +160,7 @@ export default function Portfolio() {
           <div className="mb-6">
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-500 to-pink-500 p-1">
               <img
-                src="/src/assets/profile.jpeg"
+                src={profilePic}
                 alt="Filip Ljoljic"
                 className="w-full h-full rounded-full object-cover"
               />
