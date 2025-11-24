@@ -74,6 +74,38 @@ export default function Portfolio() {
       link: "https://github.com/filipljoljic/food-order-project",
       image: foodorderingapp,
     },
+
+    {
+      title: "Custom MCP server",
+      description:
+        "Component Archaeologist is an MCP server that analyzes React projects (JS or TS), maps all components, and classifies them as pages, features, or shared UI. It exposes tools to list the component map, inspect a single component’s props/hooks/structure, and show its parent/child relationships to help you refactor large frontends with confidence.",
+      tech: [
+        "TypeScript",
+        "Node.js",
+        "MCP (Model Context Protocol)",
+        "Smithery",
+        "TypeScript Compiler API",
+        "Static Analysis",
+      ],
+      link: "https://github.com/filipljoljic/component-analyzer",
+    },
+
+    {
+      title: "Ultimate Board Game Tracker",
+      description:
+        "Track real-world board game sessions with friends. Stores each player’s raw game score and assigns league points per session (e.g., 4–3–2–1) based on player count. Supports reusable, per-game score sheets (e.g., Arnak base/expansion) with dynamic fields, manual tie resolution before save, and history-safe leaderboards by group, game, and date range.",
+      tech: [
+        "Next.js",
+        "TypeScript",
+        "React",
+        "Tailwind CSS",
+        "Prisma",
+        "PostgreSQL",
+        "React Query",
+        "shadcn/ui",
+      ],
+      link: "https://github.com/filipljoljic/board-game-tracer",
+    },
   ];
 
   const skills = [
